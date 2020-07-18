@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <td>Ações</td>
+        <td>ID</td>
+        <td>Nome</td>
+        <td>Preço</td>
+    </tr>
+    {{#data}}
+    <tr>
+        <td>
+            <a href="alterar/{{id}}">Atualizar</a>
+            <a href="excluir/{{id}}" class="excluir">Excluir</a>
+        </td>
+        <td>{{id}}</td>
+        <td>{{produto}}</td>
+        <td>{{preco}}</td>
+    </tr>
+    {{/data}}
+</table>
